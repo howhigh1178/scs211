@@ -23,7 +23,7 @@
     <script>
       function showProvinces() {
         let input_province = document.querySelector("#input_province");
-        let url = "https://ckartisan.com/api/provinces";
+        let url = "http://ckartisan.com/api/provinces";
         console.log(url);
         // if(input_province.value == "") return;
         fetch(url)
@@ -48,7 +48,7 @@
       function showAmphoes() {
         let input_province = document.querySelector("#input_province");
         let url =
-          "https://ckartisan.com/api/amphoes?province=" + input_province.value;
+          "http://ckartisan.com/api/amphoes?province=" + input_province.value;
         console.log(url);
         // if(input_province.value == "") return;
         fetch(url)
@@ -73,7 +73,7 @@
         let input_province = document.querySelector("#input_province");
         let input_amphoe = document.querySelector("#input_amphoe");
         let url =
-          "https://ckartisan.com/api/tambons?province=" +
+          "http://ckartisan.com/api/tambons?province=" +
           input_province.value +
           "&amphoe=" +
           input_amphoe.value;
@@ -103,7 +103,7 @@
         let input_amphoe = document.querySelector("#input_amphoe");
         let input_tambon = document.querySelector("#input_tambon");
         let url =
-          "https://ckartisan.com/api/zipcodes?province=" +
+          "http://ckartisan.com/api/zipcodes?province=" +
           input_province.value +
           "&amphoe=" +
           input_amphoe.value +
